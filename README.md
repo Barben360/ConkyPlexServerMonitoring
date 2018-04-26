@@ -28,6 +28,8 @@ Everything is ready !
 
 Here are the lines in my Conky 1.10 script which render the image above.
 
+We suppose my credentials are in `~/.conky/.plexcred` and the python scripts in `~/.conky/scripts/*.py`.
+
 ```lua
 ${template0 Plex Media Server}
 ${template1 State}					${template3}${execi 5 ~/.conky/scripts/get_service_state.py plexmediaserver}
